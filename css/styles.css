@@ -149,7 +149,6 @@
   text-align: center;
 }
 .hero-content {
- 
   padding-bottom: 188px;
   display: flex;
   flex-direction: column;
@@ -189,7 +188,6 @@
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
-
 }
 .advantages-list {
   display: flex;
@@ -219,7 +217,6 @@
 /* SHOWCASE */
 .showcase {
   padding-bottom: 120px;
-
 }
 .showcase-text {
   margin: 0;
@@ -243,7 +240,6 @@
 }
 /* TEAM */
 .team {
- 
   padding-bottom: 120px;
 }
 .team-title {
@@ -282,13 +278,14 @@
   line-height: 1.2;
 
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .team-list-text {
   margin: 0;
   padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
-
+  text-align: center;
   letter-spacing: 0.02em;
 }
 .item > .team-img {
@@ -302,7 +299,7 @@
 .footer-wrap {
   display: flex;
   flex-direction: column;
- 
+
   padding: 100px 0 100px 156px;
 }
 .footer-text {
@@ -317,7 +314,6 @@
 }
 /* PORTFOLIO PAGE */
 .presentation {
-
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -337,17 +333,21 @@
   color: var(--btn-nohover-text-color);
   background-color: var(--btn-nohover-background-color);
   padding: 12px 24px;
-  border: transparent;
+  border: 1px solid var(--accent-color);
 }
 .nav-btn:hover,
 .nav-btn:focus {
   background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-text-color);
+  border-color: var(--background-btn-hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .presentation-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  border: 1px solid var(--accent-color);
 }
 .presentation-list > .item {
   width: calc((100% - 48px) / 3);
@@ -355,7 +355,7 @@
 
 .presentation-title {
   margin: 0;
-  padding: 32px 0 8px 0;
+  padding: 32px 0 8px 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -365,6 +365,7 @@
 }
 .presentation-text {
   margin: 0;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.5;
 
