@@ -333,7 +333,7 @@ a {
 .presentation-nav-list {
   display: flex;
   justify-content: center;
-  gap: 48px 24px;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
@@ -346,7 +346,7 @@ a {
   color: var(--btn-nohover-text-color);
   background-color: var(--btn-nohover-background-color);
   padding: 12px 24px;
-  border: 0px 1px 1px 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   cursor: pointer;
 }
 .nav-btn:hover,
@@ -360,7 +360,7 @@ a {
 .presentation-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 .presentation-list > .item {
   width: calc((100% - 48px) / 3);
@@ -368,6 +368,7 @@ a {
 .presentation-list-text {
   border: 1px solid var(--accent-color);
   padding: 32px 16px;
+  border-top: transparent;
 }
 .presentation-title {
   margin-bottom: 8px;
